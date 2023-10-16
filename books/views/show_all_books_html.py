@@ -3,6 +3,7 @@ from django.http import HttpResponse, HttpRequest
 
 from books.models import Book
 
+
 def show_all_books_html_view(request: HttpRequest) -> HttpResponse:
     all_books = Book.objects.all()
 
