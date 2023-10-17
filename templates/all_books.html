@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Библиотека</title>
+    </head>
+    <body>
+        <main class="conteiner">
+            <article>
+                <h2>Список всех книг</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Title</th>
+                            <th scope="col">Author</th>
+                            <th scope="col">Year of publishing</th>
+                            <th scope="col">Copy printed</th>
+                            <th scope="col">Short description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    {% for book in all_books %}
+                        <tr>
+                            <th>{{ book.title }}</th>
+                            <td>{{ book.author_full_name }}</td>
+                            <td>{{ book.year_of_publishing }}</td>
+                            <td>{{ book.copies_printed }}</td>
+                            <td>{{ book.short_description }}</td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </article>
+        </main>
+    </body>
+</html>
