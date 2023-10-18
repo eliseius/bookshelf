@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>{{ book.title }}</title>
+    </head>
+    <body>
+        <main class="conteiner">
+            <article>
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Title</th>
+                            <th scope="col">Author</th>
+                            <th scope="col">Year of publishing</th>
+                            <th scope="col">Copy printed</th>
+                            <th scope="col">Short description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>{{ book.title }}</th>
+                            <td>{{ book.author_full_name }}</td>
+                            <td>{{ book.year_of_publishing }}</td>
+                            <td>{{ book.copies_printed }}</td>
+                            <td>{{ book.short_description }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </main>
+    </body>
+</html>
